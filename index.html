@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>chartbool</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="invia-dati">
+                <select id="sel-vendiotre">
+                    <option value="Giuseppe">Giuseppe</option>
+                </select>
+                <input id="input-data" type="date" value="2017-01-01" min="2017-01-01" max="2017-12-31">
+                <input id="input-vendita" type="number" value="1000">
+                <button id="btn-invia">Invia</button>
+            </div>
+            <div class="charts">
+                <canvas id="line-chart"></canvas>
+                <canvas id="pie-chart"></canvas>
+            </div>
+        </div>
+
+
+        <script src="js/main.js" charset="utf-8"></script>
+    </body>
+</html>
